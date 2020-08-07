@@ -1,0 +1,85 @@
+/* Setting default background for all site */
+body {
+  background-color: #2B2B2B;
+}
+/* Could be changed if find other color that matches */
+main {
+  background-color: #2B2B2B;
+  color: white;
+}
+
+/* Center h1 headers and assign color. */
+h1 {
+  text-align: center;
+  font-size: 46px;
+  color: #CC7832;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  color: #808080;
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {
+  color: #BBB529;
+  text-align: center;
+  font-size: 25px;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+  color: #D1243B;
+  /* background-color: #808080; */
+}
+
+/* using margin auto for left and right to center content */
+img {
+  width: 170px;
+  margin: 30px auto 30px auto;
+  display: block;
+  border-radius: 50px;
+  border: 3px solid #008080;
+}
+
+p {
+  color: #A5C261;
+  text-align: center;
+  width: 600px;
+  margin: 10px auto 10px auto; 
+}
+
+article > p{
+  text-align: justify;
+}
+
+/* Horizontal ruler*/
+hr {
+  height: 0.4px;
+  background-color: #B200B2;
+  border: 0.4px solid #B200B2;
+  /* size style color */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+a {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #CC7832;
+}
+
+
+li {
+  color : #A5C261;
+  text-align: left;
+}
+
+/* Changing list to inside position. ToDo: change background color of list */
+ul {
+  list-style-position: inside;
+  width: 500px;
+  margin: 10px auto 10px auto;
+}
