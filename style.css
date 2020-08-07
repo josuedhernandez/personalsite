@@ -1,18 +1,11 @@
 /* Setting default background for all site */
-body {
-  background-color: #2B2B2B;
-}
-/* Could be changed if find other color that matches */
-main {
+html, body {
+  height: 100vh;
+  width: 100vw;
   background-color: #2B2B2B;
   color: white;
 }
 
-.div-centered {
-  position:absolute;
-  width:100%;
-  height:100%
-}
 /* Center h1 headers and assign color. */
 h1 {
   font-size: 46px;
@@ -29,9 +22,6 @@ h2 {
 h3 {
   color: #BBB529;
   font-size: 25px;
-  text-align: center;
-  margin: 10px auto 40px auto;
-  width: 600px;
 }
 
 footer {
@@ -49,25 +39,13 @@ img {
   border: 3px solid #008080;
 }
 
-/* Trying to center image in mobile Android browser. */
-.imageContainer {
-  float: center;
-  width: 900px;
-}
-
 p {
   color: #A5C261;
-  width: 600px; 
 }
 
-h1, h2, footer, p {
+h1, h2, h3, footer, p {
   text-align: center;
   margin: 10px auto 10px auto;
-  width: 600px;
-}
-
-article > p{
-  text-align: justify;
 }
 
 /* Horizontal ruler*/
@@ -76,39 +54,53 @@ hr {
   background-color: #B200B2;
   border: 0.4px solid #B200B2;
   /* size style color */
-  margin: 40px auto 40px auto;
-  /* Had to change this value to 
-  140 for cover all screen in browser. 
-  Not sure why.*/
-  /* width: 140%; */
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 a {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Pseudo-classes to styel link*/
-a:link    { color: #AA4926; }
-a:visited { color: #8888C6; }
+/* Pseudo-classes to style link*/
+a:link    { color: #CC7832; }
+a:visited { color: #008080; }
 a:hover   { color: #D1243B; }
 a:active  { color: #B200B2; }
 
 
-li{
+li {
   color : #A5C261;
   text-align: left;
 }
 
 /* Changing list to inside position. ToDo: change background color of list */
-ul {
-  width: 500px;
+.list-inside {
+  padding: 0;
+  width: 100%;
+  margin: 10px auto;
 }
 
-ol {
-  width: 100px;
+.about-info {
+  text-align: center;
+  padding: 15px;
 }
 
-ul, ol{
-  list-style-position: inside;
-  margin: 10px auto 10px auto;
+.info-section {
+  padding: 15px;
+}
+
+.info-section p {
+  text-align: justify;
+}
+
+.contact-section {
+  padding: 15px;
+}
+
+/* Controlling content flow between laptop and smaller screens */
+@media only screen and (min-width: 768px) {
+  .list-inside {
+    width: 500px;
+  }
 }
