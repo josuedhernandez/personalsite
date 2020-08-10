@@ -27,7 +27,6 @@ h3 {
 footer {
   font-size: 15px;
   color: #D1243B;
-  /* background-color: #808080; */
 }
 
 /* using margin auto for left and right to center content */
@@ -98,9 +97,32 @@ li {
   padding: 15px;
 }
 
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1
+}
+
+.item-double {
+  flex: 2;
+}
+
 /* Controlling content flow between laptop and smaller screens */
-@media only screen and (min-width: 768px) {
+@media all and (min-width: 800px) {
   .list-inside {
     width: 500px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item {
+    font-size: larger;
+    padding: 10px;
   }
 }
