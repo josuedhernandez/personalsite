@@ -1,16 +1,16 @@
 /* Setting default background for all site */
 html, body {
-  height: 100vh;
-  width: 100vw;
   background-color: #2B2B2B;
-  color: white;
 }
 
 /* Center h1 headers and assign color. */
 h1 {
-  font-size: 46px;
+  letter-spacing: 2px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 42px;
   color: #CC7832;
   margin: 0;
+  width: 100%;
 }
 
 h2 {
@@ -38,6 +38,11 @@ img {
   border: 3px solid #008080;
 }
 
+/* Setting portfolio images format */
+.img-portfolio {
+  width: 80%;
+}
+
 p {
   color: #A5C261;
 }
@@ -59,6 +64,40 @@ hr {
 
 a {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ---  Navigation --- */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  /* font-family: 'Montserrat Alternates', sans-serif; */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border:3px solid #008080;
 }
 
 /* Pseudo-classes to style link*/
@@ -125,4 +164,55 @@ li {
     font-size: larger;
     padding: 10px;
   }
+
+  header {
+    display: flex;
+    justify-content: center;
+    /* padding: 0 30px; */
+  }
+
+  header h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+  
+  header h2 {
+    font-size: 25px;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+
+  iframe {
+    /* width: 100; */
+    height: 450px;
+    border:3px solid #008080;
+  }
+}
+
+/* Contact Form Design */
+form {
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
+}
+
+form label {
+  display: block;
+  color: #CC7832;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: rgb(240, 233, 233);
+  border-color: #B200B2;
+  border-width: 3px;
+}
+
+form textarea {
+  height: 160px;
 }
