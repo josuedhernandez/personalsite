@@ -149,8 +149,40 @@ li {
   flex: 2;
 }
 
+form label {
+  display: block;
+  color: #CC7832;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: rgb(240, 233, 233);
+  border-color: #B200B2;
+  border-width: 3px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
 /* Controlling content flow between laptop and smaller screens */
 @media all and (min-width: 800px) {
+
+  form {
+    padding-right: 8px;
+    /* Fixed small sizing issue on the right */
+  }
+
+  button {
+    margin-bottom: 0px;
+  }
+
   .list-inside {
     width: 500px;
   }
@@ -191,28 +223,4 @@ li {
     height: 450px;
     border:3px solid #008080;
   }
-}
-
-/* Contact Form Design */
-form {
-  padding-right: 8px;
-  /* Fixed small sizing issue on the right */
-}
-
-form label {
-  display: block;
-  color: #CC7832;
-}
-
-form input, 
-form textarea {
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: rgb(240, 233, 233);
-  border-color: #B200B2;
-  border-width: 3px;
-}
-
-form textarea {
-  height: 160px;
 }
